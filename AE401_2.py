@@ -16,20 +16,18 @@ while True:
     mc.postToChat("第"+str(t)+"次")
 """
 
-x = -116
-y = 67
-z = -144
-x = x+1
-z = z+1
-mc.player.setTilePos(x,y,z)
+postion = mc.player.getTilePos()
+postion.x = postion.x+1
+postion.z = postion.z+1
+mc.player.setTilePos(postion.x,postion.y,postion.z)
 time.sleep(0.5)
-x = x+1
-z = z+1
-mc.player.setTilePos(x,y,z)
+postion.x = postion.x+1
+postion.z = postion.z+1
+mc.player.setTilePos(postion.x,postion.y,postion.z)
 time.sleep(0.5)
-x = x+1
-z = z+1
-mc.player.setTilePos(x,y,z)
+postion.x = postion.x+1
+postion.z = postion.z+1
+mc.player.setTilePos(postion.x,postion.y,postion.z)
 time.sleep(0.5)
 
 """
